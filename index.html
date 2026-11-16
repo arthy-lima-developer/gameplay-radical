@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>@gameplay.radical: kit de lançamento</title>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+body{margin:0;background:#0B0B14;color:#ECECF5;font-family:Inter,system-ui,sans-serif;line-height:1.6}
+main{max-width:900px;margin:0 auto;padding:30px 20px 80px}
+h1{font-size:34px;background:linear-gradient(90deg,#9B5CFF,#00E5FF,#B6FF00);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{color:#00E5FF;border-bottom:1px solid #26263a;padding-bottom:6px;margin-top:40px}
+a{color:#B6FF00}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{border:1px solid #26263a;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#191928}
+code{background:#191928;padding:2px 6px;border-radius:5px;color:#c9a8ff}
+pre{background:#13131f;border:1px solid #26263a;border-radius:10px;padding:14px;position:relative;white-space:pre-wrap}
+pre code{background:none;padding:0;color:#ECECF5;font-size:15px}
+pre button{position:absolute;top:8px;right:8px;background:#00E5FF;border:0;border-radius:6px;padding:4px 10px;font-weight:700;cursor:pointer}
+img{max-width:100%;border-radius:12px}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+figure{margin:0;text-align:center;font-size:14px;color:#9a9ab5}
+blockquote{margin:14px 0;padding:10px 14px;border-left:4px solid #00E5FF;background:#00e5ff10;border-radius:6px}
+blockquote.important{border-color:#9B5CFF;background:#9b5cff14}
+blockquote.tip{border-color:#B6FF00;background:#b6ff0010}
+hr{border:0;border-top:1px solid #26263a;margin:30px 0}
+li input{accent-color:#B6FF00;transform:scale(1.2);margin-right:6px}
+</style></head><body><main id="c">Carregando…</main>
+<script>
+fetch('kit.md').then(r=>r.text()).then(md=>{
+  const c=document.getElementById('c');
+  c.innerHTML=marked.parse(md);
+  c.querySelectorAll('blockquote').forEach(b=>{
+    const m=b.innerHTML.match(/\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]/);
+    if(m){b.classList.add(m[1].toLowerCase());
+      const label={NOTE:'📝 Nota',TIP:'💡 Dica',IMPORTANT:'❗ Importante',WARNING:'⚠️ Atenção',CAUTION:'⛔ Cuidado'}[m[1]];
+      b.innerHTML=b.innerHTML.replace(m[0],'<b>'+label+':</b>');}
+  });
+  c.querySelectorAll('pre').forEach(p=>{const b=document.createElement('button');b.textContent='Copiar';
+    b.onclick=()=>{const t=p.querySelector('code').innerText;const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();b.textContent='Copiado!';setTimeout(()=>b.textContent='Copiar',1200)};p.appendChild(b);});
+  c.querySelectorAll('li input[type=checkbox]').forEach((x,i)=>{x.disabled=false;x.checked=localStorage.getItem('gr'+i)==='1';x.onchange=()=>localStorage.setItem('gr'+i,x.checked?'1':'0')});
+});
+</script></body></html>
