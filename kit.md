@@ -1,8 +1,13 @@
 # 🎮 @gameplay.radical: kit de lançamento
 
+> [!IMPORTANT]
+> **Decidido em 16/11/2026:** ✅ **Logo 2** (controle + raio) · ✅ **Bio A**
+
 | Item | Definição |
 |---|---|
 | **Usuário** | @gameplay.radical |
+| **Logo** | ✅ Opção 2: controle + raio (verde-limão + roxo) |
+| **Bio** | ✅ Opção A |
 | **Nome de exibição** | Gameplay Radical \| Clipes de Games |
 | **Tipo de conta** | Profissional, do tipo Criador de conteúdo |
 | **Categoria** | Criador de vídeos de jogos (ou "Criador de conteúdo digital") |
@@ -16,13 +21,15 @@
 
 ## 1. Logo
 
-<div class="row"><figure><img src="kit/logo_v1.jpg"><figcaption>Opção 1: monograma GR com raio (RECOMENDADA)</figcaption></figure><figure><img src="kit/logo_v2.jpg"><figcaption>Opção 2: controle + raio, sem texto</figcaption></figure><figure><img src="kit/logo_v3.jpg"><figcaption>Opção 3: emblema estilo esports</figcaption></figure></div>
+**[⬇️ Baixar a logo escolhida em alta resolução (1080×1080)](alta-resolucao/logo-escolhida.png)**
+
+<div class="row"><figure><img src="kit/logo_v2.jpg"><figcaption>✅ ESCOLHIDA: Opção 2, controle + raio</figcaption></figure><figure><img src="kit/logo_v1.jpg"><figcaption>Opção 1: monograma GR com raio</figcaption></figure><figure><img src="kit/logo_v3.jpg"><figcaption>Opção 3: emblema estilo esports</figcaption></figure></div>
 
 | Opção | Comentário |
 |---|---|
-| ⭐ **1: Monograma GR** | **Recomendada.** É a mais legível no círculo pequeno do perfil e liga direto ao nome. |
-| 2: Controle + raio | Comunica "games" na hora, mas não remete ao nome da conta. |
-| 3: Emblema esports | Bonita, mas tem detalhe demais para o tamanho do perfil. |
+| ✅ **2: Controle + raio** | **Escolhida.** Comunica "games" na hora e é bem legível no círculo pequeno. Arquivo: `logo_v2.png` |
+| 1: Monograma GR | Alternativa, caso queira reforçar o nome no futuro. |
+| 3: Emblema esports | Tem detalhe demais para o tamanho do perfil. |
 
 > [!TIP]
 > Os arquivos em alta resolução (1080×1080) estão em `/root/canal-games/assets/` (`logo_v1.png`, `logo_v2.png`, `logo_v3.png`). O Instagram corta a foto em círculo: envie a imagem quadrada.
@@ -46,7 +53,7 @@ Gameplay Radical 🎮 Melhores Momentos
 
 ## 3. Bio (máx. 150 caracteres)
 
-**⭐ Opção A (recomendada):** convida o público a mandar clipes, que chegam de graça e já com autorização.
+**✅ Opção A (ESCOLHIDA):** convida o público a mandar clipes, que chegam de graça e já com autorização.
 ```text
 🎮 Os momentos mais RADICAIS dos games
 💀 Fails, clutches e jogadas insanas todo dia
